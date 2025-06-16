@@ -54,7 +54,10 @@ const Index = () => {
       <div className="flex-1 overflow-hidden">
         <Editor />
       </div>
-
+      <SettingsDialog 
+        open={settingsOpen} 
+        onOpenChange={setSettingsOpen} 
+      />
      
     </div>
   )
